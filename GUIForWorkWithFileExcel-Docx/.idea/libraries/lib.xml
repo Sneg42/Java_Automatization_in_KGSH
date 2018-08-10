@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/lib" />
+      <root url="file://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/ooxml-lib" />
+      <root url="jar://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/poi-3.17.jar!/" />
+      <root url="jar://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/poi-examples-3.17.jar!/" />
+      <root url="jar://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/poi-excelant-3.17.jar!/" />
+      <root url="jar://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/poi-ooxml-3.17.jar!/" />
+      <root url="jar://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/poi-ooxml-schemas-3.17.jar!/" />
+      <root url="jar://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/poi-scratchpad-3.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/lib" recursive="false" />
+    <jarDirectory url="file://D:/DvorovenkoDI/Моё/Library for Java/poi-3.17 1/ooxml-lib" recursive="false" />
+  </library>
+</component>

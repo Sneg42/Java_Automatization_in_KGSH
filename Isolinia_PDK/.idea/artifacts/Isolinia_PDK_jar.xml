@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Isolinia_PDK:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Isolinia_PDK_jar</output-path>
+    <root id="archive" name="Isolinia_PDK.jar">
+      <element id="module-output" name="Isolinia_PDK" />
+    </root>
+  </artifact>
+</component>

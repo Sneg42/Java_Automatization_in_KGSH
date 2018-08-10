@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="490.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OFIEra.controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="10.0" prefWidth="600.0">
+         <children>
+            <ChoiceBox id="UnitProgramm" fx:id="unitProgramm" prefHeight="25.0" prefWidth="457.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="15.0" />
+               </HBox.margin></ChoiceBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="274.0" prefWidth="573.0" GridPane.rowIndex="2">
+         <children>
+            <VBox prefHeight="274.0" prefWidth="203.0">
+               <children>
+                  <Label text="Повторение:">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="150.0" text="Экскаваторы, Бульдозеры, Буровые" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="150.0" text="Сдувание и Разгрузка Автосамосвалов" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Автосамосвалы" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Взрывные работы">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TextField id="txtRepeatEquipmentsID" fx:id="txtRepeatEquipments" prefHeight="25.0" prefWidth="37.0" text="0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtRepeatBlowOut_Reload" prefHeight="25.0" prefWidth="37.0" text="0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtRepeatAuto" prefHeight="25.0" prefWidth="37.0" text="0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtRepeatExplosion" prefHeight="25.0" prefWidth="37.0" text="0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="btnStart" mnemonicParsing="false" onAction="#startProgramm" text="Старт">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="chBoxDelete1stSource" mnemonicParsing="false" prefHeight="34.0" prefWidth="137.0" text="Удалить 1ый источник из Эры?" wrapText="true">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </VBox.margin></CheckBox>
+                  <CheckBox fx:id="chBoxCopy1stName" mnemonicParsing="false" prefHeight="34.0" prefWidth="127.0" text="Копипровать имя источника?" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chBoxRoad" mnemonicParsing="false" text="Дорога?" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chBoxElectricExcavator" mnemonicParsing="false" prefHeight="34.0" prefWidth="125.0" text="Есть ли Электрич. Экс на Источнике?" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <Button mnemonicParsing="false" onAction="#stopProgramm" text="Button">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="41.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
